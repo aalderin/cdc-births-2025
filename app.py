@@ -43,7 +43,7 @@ def main():
 
     # 5. Render Top KPI Metric Banner
     render_kpi_cards(filtered_df, total_geographies_count=51)
-    st.markdown("<br>", unsafe_allowed_html=True)
+    st.markdown("<br>", unsafe_allow_html=True)
 
     # 6. Render 5 Main Dashboard Tabs
     tab_overview, tab_geo, tab_monthly_sex, tab_table, tab_about = st.tabs([
@@ -81,7 +81,7 @@ def main():
                 </ul>
             </div>
             """,
-            unsafe_allowed_html=True
+            unsafe_allow_html=True
         )
 
     # ----------------------------------------------------

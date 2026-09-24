@@ -45,7 +45,7 @@ def render_header():
             </div>
         </div>
         """,
-        unsafe_allowed_html=True
+        unsafe_allow_html=True
     )
 
 
@@ -244,7 +244,7 @@ def create_us_choropleth_map(df: pd.DataFrame) -> go.Figure:
             lakecolor="#0F172A",
             landcolor="#1E293B",
             showlakes=True,
-            subregioncolor="#334155"
+            subunitcolor="#334155"
         ),
         margin=dict(l=0, r=0, t=40, b=0)
     )
